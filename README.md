@@ -27,7 +27,7 @@ docker run -d -p 9443:443 --name hubic2swiftgate --restart always hubic2swiftgat
 
 Then at last configure hubic2swiftgate at
 ```
-https://**** IP OR FQDN ****:9443/register/?client=hubic&password=****yourHubicPassword****
+https://**** IP OR FQDN ****:9443/register/?client=hubic&password=****password in config file****
 ```
 
 You can then mount hubic2swiftgate with s3ql or similar like so,

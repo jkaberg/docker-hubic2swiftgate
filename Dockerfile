@@ -17,7 +17,6 @@ RUN a2enmod rewrite && a2enmod ssl && a2enmod php5
 ADD apache/001-hubicgate.conf /etc/apache2/sites-enabled/001-hubicgate.conf
 
 # Setup SSL
-RUN a2enmod ssl
 RUN mkdir /etc/apache2/ssl
 ADD apache/generatessl.sh /usr/local/generatessl.sh
 RUN chmod +x /usr/local/generatessl.sh
